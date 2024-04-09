@@ -67,27 +67,17 @@ static size_t _height(const binary_tree_t *tree)
  */
 void binary_tree_print(const binary_tree_t *tree)
 {
-    printf("\n---------------------\n");
     char **s;
     size_t height, i, j;
-    printf("\n hello");
-    if (!tree) {
-        printf("111");
+
+    if (!tree)
         return;
-    }
-    printf("n");
     height = _height(tree);
-    printf("m");
     s = malloc(sizeof(*s) * (height + 1));
-    printf("b");
-    if (!s) {
-        printf("222");
+    if (!s)
         return;
-    }
-    printf("after if");
     for (i = 0; i < height + 1; i++)
     {
-        printf("iiiii");
         s[i] = malloc(sizeof(**s) * 255);
         if (!s[i])
             return;
