@@ -3,7 +3,7 @@
 /**
  * binary_tree_uncle - find uncle of the node
  * @node: node to find it uncle
- * Return: uncle of node, or null if it do not have
+ * Return: uncle of node, else NULL if it do not have
 */
 
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
